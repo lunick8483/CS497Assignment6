@@ -13,3 +13,6 @@ Space Complexity: O(n)  <br />
 # Connecting Cities with minimum Cost
 
 # All Paths From Source to Target
+I'll use a depth-first search (DFS) to find all paths from the source node (0) to the target node in a directed graph. I'll use a stack called current_paths to store the paths being explored and an empty list all_paths to store the final output. Then I'll start by initializing the stack with paths that start from the source node (0). While there are paths in the stack (current_paths) then pop the last path (current_path) from the stack, check if the last node of the current path is the target node. If it is, add the path to the final output list (all_paths). If the last node of the current path has children (neighbors), explore each child: create new paths by appending each child to the current path. add these new paths to the stack for further exploration. Continue this process until the stack is empty, meaning all possible paths have been explored. <br />
+Time Complexity: O(n)  <br />
+Space Complexity: O(n)  <br />
